@@ -1,0 +1,86 @@
+{
+  "version": "2026.11.4",
+  "released": "2026-11-23",
+  "schema": 1,
+  "files": {
+    "drugs": {
+      "count": 71,
+      "hash": "fa98dcd1ca1a3d8e"
+    },
+    "interactions": {
+      "count": 40,
+      "hash": "571ab2c6fb2ca83e"
+    },
+    "diseases": {
+      "count": 40,
+      "hash": "5ddaece0bbd1c556"
+    },
+    "radiology": {
+      "count": 16,
+      "hash": "2e03d61d662dab6e"
+    },
+    "quickrefs": {
+      "count": 13,
+      "hash": "4fda099053f7d227"
+    },
+    "milestones": {
+      "count": 46,
+      "hash": "9f2e3ab88e1c2a2d"
+    }
+  },
+  "changelog": [
+    {
+      "version": "2026.11.4",
+      "date": "2026-11-23",
+      "changes": [
+        "Rincian Fornas per sediaan untuk 69 obat yang tercantum (204 baris dari halaman detail e-Fornas): bentuk & kekuatan, FPKTP/FPKTL, PP, PRB, OEN, program Kemenkes, restriksi kelas terapi/obat/sediaan, dan peresepan maksimal — disalin apa adanya.",
+        "14 obat hanya tercantum untuk FPKTL (tidak untuk faskes tingkat pertama): amoksisilin-klavulanat, sefiksim, seftriakson, klaritromisin, ondansetron, klopidogrel, warfarin, loperamid, flukonazol, enoksaparin, nifedipin, ketorolak, tramadol, metamizol.",
+        "3 baris ditandai karena kekuatan/satuan di e-Fornas tampak tidak lazim (amoksisilin-klavulanat, seftriakson, ampisilin injeksi) — nilai tidak diubah.",
+        "69 entri obat naik versi — verifikasi lokal sebelumnya perlu diulang. Filter 'Tersedia di FKTP' di daftar obat."
+      ],
+      "source": "https://e-fornas.kemkes.go.id/guest/daftar-obat — detail per sediaan (diakses 23 Nov 2026)"
+    },
+    {
+      "version": "2026.11.3",
+      "date": "2026-11-23",
+      "changes": [
+        "Status Formularium Nasional diverifikasi untuk 71 obat terhadap daftar obat e-Fornas (KMK HK.01.07/MENKES/1199/2025, berlaku 1 April 2026): 69 tercantum, 2 tidak tercantum (misoprostol; losartan — ARB yang tercantum: irbesartan, kandesartan, telmisartan, valsartan, sakubitril-valsartan).",
+        "Pencocokan tingkat zat aktif saja — kekuatan, bentuk sediaan, tingkat faskes, dan restriksi peresepan belum dicek.",
+        "Filter Fornas di daftar obat."
+      ],
+      "source": "https://e-fornas.kemkes.go.id/guest/daftar-obat (diakses 23 Nov 2026)"
+    },
+    {
+      "version": "2026.11.2",
+      "date": "2026-11-23",
+      "changes": [
+        "36 obat generik baru (status DRAFT) yang umum di layanan primer Indonesia: antiinfeksi (sefadroksil, doksisiklin, ampisilin, gentamisin, flukonazol, asiklovir, albendazol, pirantel, permetrin), TB & malaria (OAT KDT, DHP, artesunat, primakuin), obstetri & hematologi (asam traneksamat, misoprostol, metilergometrin, ferro sulfat, asam folat, vitamin K1, enoksaparin), kardiometabolik (nifedipin, bisoprolol, spironolakton, atorvastatin, losartan, HCT, glimepirid), lain-lain (metoklopramid, loratadin, prednison, ketorolak, tramadol, metamizol, fenitoin, karbamazepin, lidokain).",
+        "Dosis berdasarkan pita berat badan (DHP, OAT KDT) dengan kalkulator di modul Dosis Anak.",
+        "17 interaksi terkurasi baru (blokade ganda RAAS, penginduksi enzim + warfarin, flukonazol, enoksaparin, tramadol, khelasi besi).",
+        "Field status Fornas per obat — semua 'belum diverifikasi' hingga dicek terhadap e-Fornas.",
+        "23 entri penyakit diperbarui (versi 2) dengan tautan ke obat baru — verifikasi lokal sebelumnya perlu diulang."
+      ],
+      "source": "Sumber tercantum pada setiap entri (WHO, BNF, label FDA/DailyMed, EMA, ACOG, GINA, ESC, KDIGO, CDC, LactMed). Daftar Fornas belum dicocokkan."
+    },
+    {
+      "version": "2026.11.1",
+      "date": "2026-11-23",
+      "changes": [
+        "28 entri penyakit yang sebelumnya hanya skema kini berisi konten (status DRAFT): ISPA/faringitis, PPOK, dislipidemia, gastritis/dispepsia, demam anak, stroke, kejang demam, epilepsi, migrain, vertigo, gagal jantung, SKA, CKD, AKI, anemia, dermatitis, skabies, tinea, perawatan luka, cedera kepala, selulitis, TB paru, malaria, sepsis, hiperemesis, HPP, bronkiolitis, gizi buruk.",
+        "49 sumber guideline baru (IDSA, GOLD, ESC, AHA/ACC, KDIGO, NICE, WHO, AAP, RCOG, ILAE, ICHD-3, dll.).",
+        "Versi entri penyakit tersebut menjadi 1 — verifikasi lokal sebelumnya (bila ada) perlu diulang."
+      ],
+      "source": "Guideline yang tercantum pada setiap entri; tidak ada perubahan pada entri obat/kalkulator."
+    },
+    {
+      "version": "2026.11.0",
+      "date": "2026-11-22",
+      "changes": [
+        "Rilis awal dataset seed: 35 obat, 23 interaksi terkurasi, 12 penyakit lengkap + 28 entri skema, 16 istilah radiologi, 13 algoritma kegawatdaruratan, 46 milestone CDC/AAP 2022.",
+        "Tabel LMS WHO Child Growth Standards 2006 (0–5 tahun).",
+        "Seluruh konten klinis berstatus DRAFT — perlu verifikasi terhadap sumber primer sebelum dipakai klinis."
+      ],
+      "source": "Disusun dari sumber yang tercantum pada setiap entri"
+    }
+  ]
+}
